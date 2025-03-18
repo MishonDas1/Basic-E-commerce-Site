@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panda Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container animated">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shoes">Shoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bag">Bagpack</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#subscribe">Subscribe</a>
+              </li>
+            </ul>
+            <form class="d-flex me-3" id="searchForm">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" list="itemList">
+              <datalist id="itemList">
+                <option value="Shoes">
+                <option value="Bagpack">
+                <option value="Subscribe">
+              </datalist>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a href="#" class="btn btn-outline-primary position-relative" id="cartIcon">
+              <img src="images/icons8-add-shopping-cart-50.png" alt="Cart" style="width: 24px; height: 24px;">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container animated">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+              <div class="col-md-7 col-sm-12">
+                <h1>MI LED TV</h1>
+                <p>This is the best tv in the world. It's very beautiful tv for you, only you.</p>
+                <h1 class="price">$1200 <span class="text-muted"><del>$1500</del></span></h1>
+                <p>Enjoy a cinematic experience with the MI LED TV, featuring 4K resolution and smart capabilities.</p>
+                <button type="button" class="btn btn-primary">BUY NOW</button>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img src="images/tv.png" class="d-block w-100" alt="..." data-bs-target="#carouselExampleFade" data-bs-slide-to="1">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+              <div class="col-md-7 col-sm-12">
+                <h1>MI HEADPHONE</h1>
+                <p>This is the best headphone in the world. It's very beautiful headphone for you, only you.</p>
+                <h1 class="price">$120 <span class="text-muted"><del>$150</del></span></h1>
+                <p>Experience high-quality sound with the MI Headphone, designed for comfort and durability.</p>
+                <button type="button" class="btn btn-primary">BUY NOW</button>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img src="images/headphone.png" class="d-block w-100" alt="..." data-bs-target="#carouselExampleFade" data-bs-slide-to="2">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+              <div class="col-md-7 col-sm-12">
+                <h1>MI XBOX</h1>
+                <p>This is the best Xbox in the world. It's very beautiful Xbox for you, only you.</p>
+                <h1 class="price">$550 <span class="text-muted"><del>$700</del></span></h1>
+                <p>Get the ultimate gaming experience with the MI Xbox, featuring powerful hardware and exclusive games.</p>
+                <button type="button" class="btn btn-primary">BUY NOW</button>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img src="images/xbox.png" class="d-block w-100" alt="..." data-bs-target="#carouselExampleFade" data-bs-slide-to="0">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container categories animated">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="d-flex justify-content-between align-items-center cat1">
+                    <h1>Watch</h1>
+                    <a href="#watch"><img src="images/categories/watch.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="d-flex justify-content-between align-items-center cat2">
+                    <h1>Bag</h1>
+                    <a href="#bag"><img src="images/categories/bag.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="d-flex justify-content-between align-items-center cat3">
+                    <h1>Shoes</h1>
+                    <a href="#shoes"><img src="images/categories/shoes.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container shoes animated" id="shoes">
+      <h3>Shoes</h3>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card">
+            <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nikee Shoes</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+              <h5>$500 <span class="text-muted"><del>$600</del></span> <span class="badge bg-success">20% off</span></h5>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>Step up your game with Nikee Shoes, offering superior comfort and style for all occasions.</p>
+              <button type="button" class="btn btn-primary buy-now" data-product="Nikee Shoes" data-price="500" data-discount="600">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card">
+            <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Supply 350</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>$120 <span class="text-muted"><del>$150</del></span> <span class="badge bg-success">20% off</span></h5>
+              <p>⭐⭐⭐⭐</p>
+              <p>Get the best of both worlds with Supply 350, combining durability and modern design.</p>
+              <button type="button" class="btn btn-primary buy-now" data-product="Supply 350" data-price="120" data-discount="150">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card">
+            <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nice Shoes</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+              <h5>$220 <span class="text-muted"><del>$300</del></span> <span class="badge bg-success">25% off</span></h5>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>Walk with confidence in Nice Shoes, designed for both comfort and elegance.</p>
+              <button type="button" class="btn btn-primary buy-now" data-product="Nice Shoes" data-price="220" data-discount="300">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container animated" id="bag">
+      <h1>Bagpack</h1>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card">
+            <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3>$120 <span class="text-muted"><del>$150</del></span> <span class="badge bg-success">20% off</span></h3>
+              <p>⭐⭐⭐⭐</p>
+              <p>Carry your essentials in style with this versatile and durable bagpack.</p>
+              <button type="button" class="btn btn-primary buy-now" data-product="Bag 1" data-price="120" data-discount="150">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card">
+            <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h3>$150 <span class="text-muted"><del>$200</del></span> <span class="badge bg-success">25% off</span></h3>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>Perfect for travel and daily use, this bagpack offers ample storage and comfort.</p>
+              <button type="button" class="btn btn-primary buy-now" data-product="Bag 2" data-price="150" data-discount="200">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card">
+            <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h3>$180 <span class="text-muted"><del>$250</del></span> <span class="badge bg-success">28% off</span></h3>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>Stay organized and stylish with this premium bagpack, designed for modern lifestyles.</p>
+              <button type="button" class="btn btn-primary buy-now" data-product="Bag 3" data-price="180" data-discount="250">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container orange-bg d-flex align-items-center justify-content-center animated" id="subscribe">
+      <div>
+        <h3>LET'S STAY IN TOUCH</h3>
+      <h6>Get updates on sales,specials and more</h6>
+      <input type="text" class="form-control mb-2">
+      <button type="button" class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="container animated" id="contact">
+      <h2 class="mt-5">Contact Us</h2>
+      <form action="https://formspree.io/f/xgvavrar" method="POST">
+        <div class="mb-3">
+          <label for="email" class="form-label">Your email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your message:</label>
+          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+    <footer class="footer animated">
+      <p>Copyright by Mishon Das</p>
+    </footer>
+
+    <!-- Modal for Cart -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="cartItems">
+            No items in cart.
+          </div>
+          <div class="modal-footer">
+            <h5>Total: $<span id="cartTotal">0</span></h5>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="payment.html" class="btn btn-primary" id="checkoutButton">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        if (query.includes('shoes')) {
+          window.location.href = '#shoes';
+        } else if (query.includes('bag')) {
+          window.location.href = '#bag';
+        } else if (query.includes('subscribe')) {
+          window.location.href = '#subscribe';
+        } else {
+          alert('Item not found');
+        }
+      });
+
+      window.addEventListener('scroll', function() {
+        document.body.classList.add('scrolled');
+        const animatedElements = document.querySelectorAll('.animated');
+        animatedElements.forEach(element => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.classList.add('visible');
+          }
+        });
+      });
+
+      let cartCount = 0;
+      let cartTotal = 0;
+      const cartItems = [];
+      document.querySelectorAll('.buy-now').forEach(button => {
+        button.addEventListener('click', function() {
+          const product = this.getAttribute('data-product');
+          const price = parseFloat(this.getAttribute('data-price'));
+          const discount = parseFloat(this.getAttribute('data-discount'));
+          const existingItem = cartItems.find(item => item.product === product);
+          if (existingItem) {
+            existingItem.quantity++;
+            existingItem.totalPrice += price;
+          } else {
+            cartItems.push({ product, price, discount, quantity: 1, totalPrice: price });
+          }
+          cartCount++;
+          cartTotal += price;
+          document.getElementById('cartCount').innerText = cartCount;
+          alert(product + ' added to cart');
+        });
+      });
+
+      document.getElementById('cartIcon').addEventListener('click', function() {
+        const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+        const cartItemsContainer = document.getElementById('cartItems');
+        if (cartItems.length === 0) {
+          cartItemsContainer.innerHTML = 'No items in cart.';
+        } else {
+          cartItemsContainer.innerHTML = '<ul>' + cartItems.map(item => `
+            <li>
+              ${item.product} - $${item.price} <span class="text-muted"><del>$${item.discount}</del></span>
+              <div>
+                Quantity: ${item.quantity}
+                <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity('${item.product}', -1)">-</button>
+                <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity('${item.product}', 1)">+</button>
+              </div>
+            </li>
+          `).join('') + '</ul>';
+        }
+        document.getElementById('cartTotal').innerText = cartTotal.toFixed(2);
+        cartModal.show();
+      });
+
+      function updateQuantity(product, change) {
+        const item = cartItems.find(item => item.product === product);
+        if (item) {
+          item.quantity += change;
+          item.totalPrice += item.price * change;
+          cartCount += change;
+          cartTotal += item.price * change;
+          if (item.quantity <= 0) {
+            const index = cartItems.indexOf(item);
+            cartItems.splice(index, 1);
+          }
+          document.getElementById('cartCount').innerText = cartCount;
+          document.getElementById('cartTotal').innerText = cartTotal.toFixed(2);
+          // Update cart items without reopening the modal
+          const cartItemsContainer = document.getElementById('cartItems');
+          if (cartItems.length === 0) {
+            cartItemsContainer.innerHTML = 'No items in cart.';
+          } else {
+            cartItemsContainer.innerHTML = '<ul>' + cartItems.map(item => `
+              <li>
+                ${item.product} - $${item.price} <span class="text-muted"><del>$${item.discount}</del></span>
+                <div>
+                  Quantity: ${item.quantity}
+                  <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity('${item.product}', -1)">-</button>
+                  <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity('${item.product}', 1)">+</button>
+                </div>
+              </li>
+            `).join('') + '</ul>';
+          }
+          document.getElementById('cartTotal').innerText = cartTotal.toFixed(2);
+        }
+      }
+
+      // Change background of #subscribe and #contact to a random background
+      const backgrounds = [
+        'linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e)',
+        'linear-gradient(45deg, #a1c4fd, #c2e9fb, #c2e9fb, #a1c4fd)',
+        'linear-gradient(45deg, #fbc2eb, #a6c1ee, #a6c1ee, #fbc2eb)',
+        'linear-gradient(45deg, #ffecd2, #fcb69f, #fcb69f, #ffecd2)'
+      ];
+      const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+      document.body.style.background = randomBackground;
+      document.getElementById('subscribe').style.background = randomBackground;
+      document.getElementById('contact').style.background = randomBackground;
+
+      // Redirect to payment page on checkout
+      document.getElementById('checkoutButton').addEventListener('click', function() {
+        window.location.href = 'payment.html';
+      });
+    </script>
+  </body>
+</html>

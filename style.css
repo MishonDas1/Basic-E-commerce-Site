@@ -1,0 +1,178 @@
+.orange-bg{
+    background-color: #FEEAE9;
+
+}
+.carousel-item{
+    padding: 5px 3px;
+}
+.price{
+    color: #ff0055;
+}
+.cat1,.cat2,.cat3{
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cat1{
+    background-color: orange;
+    
+}
+.cat2{
+    background-color: orchid;
+}
+.cat3{
+    background-color: blue;
+}
+.categories h1{
+    color: white;
+    font-size: 1.5rem;
+}
+.categories img{
+    width: 100px;
+    height: auto;
+}
+.card{
+    border: none;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+#subscribe{
+    height: 200px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+.footer{
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-item img[src*="headphone"] {
+    max-width: 80%;
+}
+
+.carousel-item img[src*="tv"] {
+    max-width: 90%;
+}
+
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body.scrolled {
+    animation: gradientBackgroundScrolled 15s ease infinite;
+}
+
+@keyframes gradientBackgroundScrolled {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated.visible {
+    opacity: 1;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+#contact {
+    padding: 20px;
+    background: linear-gradient(45deg, #ffecd2, #fcb69f, #fcb69f, #ffecd2);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+.shoes .card, .bag .card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+
+.shoes .card img, .bag .card img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        padding: 10px 5px;
+    }
+    .categories h1 {
+        font-size: 1.2rem;
+    }
+    .categories img {
+        width: 80px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    #subscribe {
+        height: auto;
+        padding: 20px;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+    .navbar-brand img {
+        width: 50px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+    .cat1, .cat2, .cat3 {
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+    .shoes .card, .bag .card {
+        margin-bottom: 15px;
+    }
+    .shoes .card img, .bag .card img {
+        width: 100%;
+        height: auto;
+    }
+    .shoes .card-body, .bag .card-body {
+        padding: 10px;
+    }
+    .shoes .card-title, .bag .card-title {
+        font-size: 1.2rem;
+    }
+    .shoes .card-text, .bag .card-text {
+        font-size: 0.9rem;
+    }
+    .shoes .price, .bag .price {
+        font-size: 1.1rem;
+    }
+    .shoes .badge, .bag .badge {
+        font-size: 0.8rem;
+    }
+}
