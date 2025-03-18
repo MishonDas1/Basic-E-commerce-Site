@@ -62,7 +62,7 @@
 body {
     background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
     background-size: 400% 400%;
-    animation: gradientBackground 15s ease infinite;
+    animation: gradientBackground 30s ease infinite;
 }
 
 @keyframes gradientBackground {
@@ -72,7 +72,7 @@ body {
 }
 
 body.scrolled {
-    animation: gradientBackgroundScrolled 15s ease infinite;
+    animation: gradientBackgroundScrolled 30s ease infinite;
 }
 
 @keyframes gradientBackgroundScrolled {
@@ -94,12 +94,12 @@ body.scrolled {
 
 .animated {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .animated.visible {
     opacity: 1;
-    animation: fadeInUp 0.5s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 #contact {
